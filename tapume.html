@@ -6,26 +6,39 @@
     <link rel="icon" type="image/png" sizes="64x64" href="/gallery/icon.jpeg">
     <title>Owlsize Company</title>
     <style>
-        body{
-            background-image: url(gallery/owlsize.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
         }
         main{
+            background-image: url(gallery/owlsize.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100vh;
+            width: 100%;
+        }
+        .midias{
+            text-align: center;
             display: flex;
             flex-direction: column;
-            height: 150vh;
-            justify-content: center;
-            text-align: center;
+            height: 200px;
         }
     </style>
 </head>
 <body>
-    <!-- <main>
-        <h1>Lorem ipsum dolor sit.</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <p>Acesse <a href="#">Instagram</a></p>
-        <p>Acesse <a href="#">TikTok</a></p>
-    </main> -->
+    <main>
+        <div style="padding:126% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/934619136?muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write muted" style="width:100%;height:100vh;" title="Welcome Owlsize">
+            </iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="midias">
+            <h1>Siga-me os bons</h1><br>
+            <p>Acesse <a href="#">#Instagram</a></p>
+            <p>Acesse <a href="#">#TikTok</a></p>
+        </div>
+    </main>
 </body>
 </html>
