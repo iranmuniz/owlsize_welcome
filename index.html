@@ -3,82 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="64x64" href="/gallery/icon.jpeg">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/gallery/icon.jpeg">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
     <title>Owlsize Company</title>
-    <style>
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-        a{
-            text-decoration: none;
-            color: #F0336D;
-        }
-        h1,p,h2{
-            padding-bottom: 20px;
-            font-family: "Antonio", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            color: black;
-        }
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X3CYLTH7E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        h1{
-            font-size: 21px;
-            font-weight: 100;
-        }
-        body{
-            background-color: #E2E3E7;
-            color: white;
-        }
-        .desktop{
-            display: none;
-        }
-        .mobile{
-            background-image: url(gallery/fundo\ transparente.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 100%;
-        }
-
-        .midias{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            height: 45rem;
-            flex-flow: column;
-            justify-content: end;
-            padding: 0px 30px;
-        }
-        @media (min-width: 680px) {
-            body{
-                background-color: white;
-            }
-            .mobile{
-                display: none;
-            }
-            .desktop{
-                display: block;
-            }
-            .desktop__images{
-                display: flex;
-                justify-content: center;
-            }
-            .desktop__text{
-                text-align: center;
-            }
-        }
-    </style>
+    gtag('config', 'G-0X3CYLTH7E');
+    </script>
 </head>
 <body>
     <main class="desktop">
         <section class="desktop__images">
-            <img src="gallery/icon.jpeg" alt="">
+            <img src="assets/gallery/icon.jpeg" alt="">
         </section>
         <section class="desktop__text">
             <h1>Bem-vindo à revolução do guarda-roupa que transcende o comum.</h1>
