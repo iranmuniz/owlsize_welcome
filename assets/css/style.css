@@ -9,7 +9,7 @@ a{
     text-decoration: none;
     color: #F0336D;
 }
-h1,p,h2{
+h1,h2,p{
     padding-bottom: 20px;
     font-family: "Antonio", sans-serif;
     font-optical-sizing: auto;
@@ -22,43 +22,42 @@ h1{
     font-weight: 100;
 }
 body{
-    background-color: #E2E3E7;
+    background-color: white;
     color: white;
 }
-.desktop{
-    display: none;
+ 
+.desktop__images{
+    display: flex;
+    justify-content: center;
 }
-.mobile{
-    background-image: url(/assets/gallery/Sem\ freio\,\ sem\ padrao\,\ so\ presenca.\ Its\ Owlsize\ EM\ BREVE\ NOVIDADES\ Story.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
+.desktop__text{
+    text-align: center;
 }
 
 .midias{
     text-align: center;
     display: flex;
-    flex-direction: column;
     height: 45rem;
     flex-flow: column;
     justify-content: end;
     padding: 0px 30px;
 }
-@media (min-width: 680px) {
+@media (max-width: 680px) {
     body{
-        background-color: white;
-    }
-    .mobile{
-        display: none;
+        background-color: #E5E5E5;
     }
     .desktop{
-        display: block;
+        background-image: url(/assets/gallery/Sem\ freio\,\ sem\ padrao\,\ so\ presenca.\ Its\ Owlsize\ EM\ BREVE\ NOVIDADES\ Story.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
     }
     .desktop__images{
-        display: flex;
-        justify-content: center;
+        display: none;
     }
+
     .desktop__text{
-        text-align: center;
+        display: none;
     }
 }
